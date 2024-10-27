@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: rgb(229, 244, 250);
+}
+
+footer {
+  background: #888;
+  margin-top: 100px;
+  padding: 50px;
+  text-align: center;
+}
+footer .logo {
+  color: #e9e9e9;
+  font-size: 14px;
+  padding: 10px 0;
+  text-decoration: none;
+}
+footer #link {
+  padding: 1px 0;
+}
+footer #link a {
+  color: #e9e9e9;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 5px;
+}
+@media screen and (max-width: 767px) {
+  footer #link a {
+    display: block;
+    padding: 8px 0;
+  }
+}
+footer #copy {
+  color: #252525;
+  font-size: 8px;
+}
+
+#arrow {
+  background-image: url(./img/arrow.png);
+  position: fixed;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
