@@ -36,17 +36,23 @@ body {
     width: 100%;
 
     .logo {
-        font-weight: bold;
-        font-size: 1.5em;
+        display: block;
+        width: 100px;
+        height: 100px;
 
-        span {
-            font-weight: normal;
+        img {
+            width: 100px;
+            height: 100px;
         }
     }
 
     .nav {
+        position: fixed;
         flex-grow: 1;
         margin-left: 50px;
+        left: 30px;
+        bottom: 50px;
+
 
         ul {
             display: flex;
@@ -55,6 +61,8 @@ body {
             display: block;
 
             li {
+                margin: 5px 0;
+
                 a {
                     text-decoration: none;
                     color: #333;
@@ -71,6 +79,9 @@ body {
     .header-right {
         display: flex;
         gap: 15px;
+        position: fixed;
+        right: 30px;
+        top: 30px;
 
         .analytics, .reserve {
             text-decoration: none;
@@ -100,12 +111,16 @@ body {
         line-height: 1.2;
         font-weight: bold;
         color: #333;
+        top: 45%;
+        position: absolute;
     }
 
     .sub-text {
         font-size: 1.2em;
         margin-top: 10px;
         color: #666;
+        top: 65%;
+        position: absolute;
     }
 }
 

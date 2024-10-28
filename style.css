@@ -21,21 +21,29 @@ body {
   width: 100%;
 }
 .header .logo {
-  font-weight: bold;
-  font-size: 1.5em;
+  display: block;
+  width: 100px;
+  height: 100px;
 }
-.header .logo span {
-  font-weight: normal;
+.header .logo img {
+  width: 100px;
+  height: 100px;
 }
 .header .nav {
+  position: fixed;
   flex-grow: 1;
   margin-left: 50px;
+  left: 30px;
+  bottom: 50px;
 }
 .header .nav ul {
   display: flex;
   gap: 15px;
   list-style: none;
   display: block;
+}
+.header .nav ul li {
+  margin: 5px 0;
 }
 .header .nav ul li a {
   text-decoration: none;
@@ -48,6 +56,9 @@ body {
 .header .header-right {
   display: flex;
   gap: 15px;
+  position: fixed;
+  right: 30px;
+  top: 30px;
 }
 .header .header-right .analytics, .header .header-right .reserve {
   text-decoration: none;
@@ -73,11 +84,15 @@ body {
   line-height: 1.2;
   font-weight: bold;
   color: #333;
+  top: 45%;
+  position: absolute;
 }
 .main-section .sub-text {
   font-size: 1.2em;
   margin-top: 10px;
   color: #666;
+  top: 65%;
+  position: absolute;
 }
 
 .loyalty-section {
