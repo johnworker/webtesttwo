@@ -112,7 +112,7 @@ $(window).scroll(function () {
 // 動畫區域
 const slides = document.querySelectorAll('.slide');
 let currentIndex = 0;
-const slideInterval = 3000; // 3秒換圖
+const slideInterval = 4000; // 4秒換圖
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
@@ -129,4 +129,4 @@ function nextSlide() {
 }
 
 showSlide(currentIndex); // 顯示第一張
-setInterval(nextSlide, slideInterval); // 每3秒換一張
+setInterval(nextSlide, slideInterval); // 每4秒換一張
