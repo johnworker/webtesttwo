@@ -122,6 +122,41 @@ body {
         top: 65%;
         position: absolute;
     }
+
+    // 動畫區域
+    .animation-container {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+    
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            img {
+                width: 100%;
+                height: auto;
+            }
+    
+            p {
+                margin-top: 10px;
+                font-size: 1.2em;
+                color: #333;
+            }
+        }
+    
+        .active {
+            opacity: 1;
+        }
+    }
 }
 
 // 第二區

@@ -94,6 +94,35 @@ body {
   top: 65%;
   position: absolute;
 }
+.main-section .animation-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+.main-section .animation-container .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-section .animation-container .slide img {
+  width: 100%;
+  height: auto;
+}
+.main-section .animation-container .slide p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+.main-section .animation-container .active {
+  opacity: 1;
+}
 
 .loyalty-section {
   background-color: #111;

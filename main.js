@@ -109,3 +109,24 @@ $(window).scroll(function () {
     else arrow.stop().fadeOut(arrowTimeInt)
 });
 
+// 動畫區域
+const slides = document.querySelectorAll('.slide');
+let currentIndex = 0;
+const slideInterval = 3000; // 3秒換圖
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+}
+
+showSlide(currentIndex); // 顯示第一張
+setInterval(nextSlide, slideInterval); // 每3秒換一張
