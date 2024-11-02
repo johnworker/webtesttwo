@@ -41,7 +41,7 @@ body {
         position: fixed;
         flex-grow: 1;
         margin-left: 50px;
-        left: 30px;
+        right: 30px;
         top: 50px;
         display: block;
 
@@ -92,13 +92,13 @@ body {
     background-position: center;
     color: $background-color;
     text-align: center;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
 
     // 動畫區域
     .animation-container {
         position: relative;
-        width: 800px;
+        width: 1000px;
         height: 570px;
         overflow: hidden;
         margin: 0 50px;
@@ -135,71 +135,18 @@ body {
         max-width: 600px;
 
         h1 {
-            font-size: 3rem;
+            font-size: 2rem;
             margin-bottom: 20px;
             color: #000;
         }
 
         p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
+            font-size: 1rem;
+            margin: 30px 0;
             color: #000;
         }
-
-        .btn-primary {
-            background-color: $light-red;
-            color: $background-color;
-            padding: 15px 30px;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            transition: background 0.3s ease;
-
-            &:hover {
-                background-color: darken($light-red, 10%);
-            }
-        }
     }
 }
-
-// About Us
-.about-us-section {
-    padding: 60px 0;
-    background-color: #f9f9f9;
-
-    .section-title {
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 2em;
-        color: #333;
-    }
-
-    .team-members {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .more-members {
-        text-align: center;
-        margin-top: 30px;
-
-        .btn {
-            padding: 10px 20px;
-            font-size: 1em;
-            border-radius: 5px;
-            text-decoration: none;
-            background-color: #007bff;
-            color: white;
-            transition: background-color 0.3s;
-
-            &:hover {
-                background-color: #0056b3;
-            }
-        }
-    }
-}
-
 
 // About Section
 .about-section {
@@ -289,6 +236,81 @@ body {
     }
 }
 
+// About Us
+.about-us-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2em;
+        color: #333;
+    }
+
+    .team-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        .team-member {
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            max-width: 250px;
+
+            .member-image img {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font-size: 1.2em;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 0.9em;
+                color: #666;
+                margin-bottom: 10px;
+            }
+
+            .member-role {
+                display: block;
+                font-size: 0.85em;
+                color: #999;
+            }
+        }
+    }
+
+    .show-more {
+        text-align: center;
+        margin-top: 20px;
+
+        .btn-secondary {
+            background-color: $light-red;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background-color 0.3s;
+            border: none;
+
+            &:hover {
+                background-color: $dark-red;
+            }
+        }
+    }
+}
+
 // Services Section
 .services-section {
     padding: $padding-section 0;
@@ -349,65 +371,63 @@ body {
 .process-section {
     padding: $padding-section 0;
     text-align: center;
-  
+
     .section-title {
-      font-size: 2rem;
-      color: $light-red;
-      margin-bottom: 40px;
+        font-size: 2rem;
+        color: $light-red;
+        margin-bottom: 40px;
     }
-  
+
     .process-steps {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      max-width: 900px;
-      margin: auto;
-      position: relative;
-  
-      .step {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 150px;
-        text-align: center;
-  
-        .circle {
-          width: 60px;
-          height: 60px;
-          background-color: $light-red;
-          color: $background-color;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.2rem;
-          font-weight: 700;
-          margin-bottom: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        max-width: 900px;
+        margin: auto;
+        position: relative;
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 150px;
+            text-align: center;
+
+            .circle {
+                width: 60px;
+                height: 60px;
+                background-color: $light-red;
+                color: $background-color;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+
+            .highlight {
+                background-color: #b0b0b0; // 中間灰色的步驟
+            }
+
+            .step-content {
+                h3 {
+                    font-size: 1.1rem;
+                    color: $text-color;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    color: darken($text-color, 20%);
+                    line-height: 1.5;
+                }
+            }
         }
-  
-        .highlight {
-          background-color: #b0b0b0; // 中間灰色的步驟
-        }
-  
-        .step-content {
-          h3 {
-            font-size: 1.1rem;
-            color: $text-color;
-            margin-bottom: 5px;
-          }
-  
-          p {
-            font-size: 0.9rem;
-            color: darken($text-color, 20%);
-            line-height: 1.5;
-          }
-        }
-      }
-  
     }
-  }
-  
+}
 
 // Pricing Section區
 .pricing-section {
@@ -415,7 +435,6 @@ body {
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
-
 
     .pricing-level {
         display: inline-block;
