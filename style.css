@@ -197,32 +197,49 @@ body {
 
 .services-section {
   padding: 60px 0;
-  max-width: 900px;
-  margin: 0 auto;
+  text-align: center;
+  background-color: #f5f5f5;
 }
-.services-section .container {
-  display: grid;
-  grid-template-columns: 30%, 30%, 30%;
-}
-.services-section .container .service {
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  transition: transform 0.3s ease;
-}
-.services-section .container .service:hover {
-  transform: translateY(-10px);
-}
-.services-section .container .service h3 {
-  font-size: 1.5rem;
+.services-section .section-title {
+  font-size: 2rem;
   color: #e96669;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
-.services-section .container .service p {
-  font-size: 1rem;
+.services-section .service-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services-section .service-items .service-item {
+  flex: 1;
+  max-width: 300px;
+  margin: 0 10px;
+  text-align: center;
+}
+.services-section .service-items .service-item .icon-container {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  background-color: white;
+  -webkit-clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+          clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services-section .service-items .service-item .icon-container img {
+  width: 50%;
+  height: auto;
+}
+.services-section .service-items .service-item h3 {
+  font-size: 1.3rem;
+  color: #e96669;
+  margin: 10px 0;
+}
+.services-section .service-items .service-item p {
+  font-size: 0.95rem;
   color: #333;
+  line-height: 1.6;
 }
 
 .pricing-section {
