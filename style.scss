@@ -163,44 +163,88 @@ body {
 
 // About Section
 .about-section {
-    padding: 80px 0;
-    background-color: $secondary-color; // 柔和的背景色
-  
-    .about-content {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-  
-      .section-title {
-        font-size: 2rem;
-        color: $primary-color;
-        margin-bottom: 20px;
-      }
-  
-      .about-text {
-        font-size: 1.2rem;
-        color: $text-color;
-        line-height: 1.8;
+    padding: $padding-section 0;
+    background-color: $secondary-color; // 使用較淺的背景色讓內容突出
+
+    .section-title {
+        text-align: center;
+        font-size: 1.8rem;
+        color: $light-red;
         margin-bottom: 30px;
-      }
-  
-      .btn-secondary {
-        display: inline-block;
-        padding: 12px 25px;
-        background-color: darken($primary-color, 5%);
-        color: $background-color;
-        font-size: 1rem;
-        font-weight: 600;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-  
-        &:hover {
-          background-color: darken($primary-color, 15%);
-        }
-      }
     }
-  }
-  
+
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        .about-intro {
+            flex: 1;
+            max-width: 50%;
+            padding-right: 20px;
+
+            h3 {
+                font-size: 1.5rem;
+                color: $light-red;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.8;
+                color: $text-color;
+
+                &:first-of-type {
+                    color: $secondary-color;
+                    font-size: 1.1rem;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .about-icons {
+            flex: 1;
+            max-width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .icon-box {
+                text-align: center;
+                max-width: 180px;
+                background-color: lighten($light-red, 45%);
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 auto 10px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                h4 {
+                    font-size: 1.2rem;
+                    color: $light-red;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    color: $text-color;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
 
 // Services Section
 .services-section {
@@ -210,7 +254,7 @@ body {
 
     .container {
         display: grid;
-        grid-template-columns: (30%,30%,30%);
+        grid-template-columns: (30%, 30%, 30%);
 
         .service {
             margin: 20px 0;
