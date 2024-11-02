@@ -159,72 +159,11 @@ body {
     }
 }
 
-// 第二區
-.loyalty-section {
-    background-color: #111; // 深色背景與第一個區域形成對比
-    color: #eee; // 較淺的文字顏色以增加對比度
-    padding: 100px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    position: relative;
+// Hero Section區
 
-    .content-wrapper {
-        max-width: 800px;
-        text-align: left;
-        position: relative;
-    }
 
-    .section-title {
-        font-size: 3em;
-        font-weight: bold;
-        position: absolute;
-        top: 20px;
-        right: 0;
-        color: rgba(255, 255, 255, 0.2); // 淡化的字體，製造背景效果
-    }
 
-    .content-text {
-        margin-top: 80px;
-
-        h3 {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #fff;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style: none;
-            padding-left: 0;
-            margin-bottom: 20px;
-
-            li {
-                margin-bottom: 10px;
-                font-size: 1em;
-                color: #ccc;
-                position: relative;
-                padding-left: 20px;
-
-                &::before {
-                    content: '•'; // 使用圓點標記
-                    position: absolute;
-                    left: 0;
-                    color: #888;
-                }
-            }
-        }
-
-        p {
-            font-size: 1em;
-            color: #bbb;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-    }
-}
-
+// 頁尾區
 footer {
     background: #888;
     margin-top: 100px;

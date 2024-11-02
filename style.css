@@ -124,63 +124,6 @@ body {
   opacity: 1;
 }
 
-.loyalty-section {
-  background-color: #111;
-  color: #eee;
-  padding: 100px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  position: relative;
-}
-.loyalty-section .content-wrapper {
-  max-width: 800px;
-  text-align: left;
-  position: relative;
-}
-.loyalty-section .section-title {
-  font-size: 3em;
-  font-weight: bold;
-  position: absolute;
-  top: 20px;
-  right: 0;
-  color: rgba(255, 255, 255, 0.2);
-}
-.loyalty-section .content-text {
-  margin-top: 80px;
-}
-.loyalty-section .content-text h3 {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 20px;
-}
-.loyalty-section .content-text ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 20px;
-}
-.loyalty-section .content-text ul li {
-  margin-bottom: 10px;
-  font-size: 1em;
-  color: #ccc;
-  position: relative;
-  padding-left: 20px;
-}
-.loyalty-section .content-text ul li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #888;
-}
-.loyalty-section .content-text p {
-  font-size: 1em;
-  color: #bbb;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
 footer {
   background: #888;
   margin-top: 100px;
