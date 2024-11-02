@@ -546,3 +546,92 @@ footer {
     bottom: 30px;
     cursor: pointer;
 }
+
+
+// 成員分頁
+.team-section {
+    padding: $padding-section 0;
+    background-color: $secondary-color; // 使用較淺的背景色讓內容突出
+    max-width: 900px;
+    margin: 0 auto;
+
+    .section-title {
+        text-align: center;
+        font-size: 1.8rem;
+        color: $light-red;
+        margin-bottom: 30px;
+    }
+
+    .team-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        .team-intro {
+            flex: 1;
+            max-width: 50%;
+            padding-right: 20px;
+
+            h3 {
+                font-size: 1.5rem;
+                color: $light-red;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.8;
+                color: $text-color;
+
+                &:first-of-type {
+                    color: $secondary-color;
+                    font-size: 1.1rem;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .team-icons {
+            flex: 1;
+            max-width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .icon-box {
+                text-align: center;
+                max-width: 180px;
+                height: 300px;
+                background-color: lighten($light-red, 45%);
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 auto 10px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                h4 {
+                    font-size: 1.2rem;
+                    color: $light-red;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    color: $text-color;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
