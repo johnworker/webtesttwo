@@ -296,16 +296,6 @@ body {
   color: black;
   line-height: 1.5;
 }
-.process-section .process-steps .step:not(:last-child)::after {
-  content: "";
-  width: 50px;
-  height: 2px;
-  background-color: #aaa;
-  position: absolute;
-  top: 35px;
-  left: 105px;
-  transform: rotate(45deg);
-}
 
 .pricing-section {
   padding: 60px 0;

@@ -365,17 +365,6 @@ body {
         }
       }
   
-      // 圖示箭頭
-      .step:not(:last-child)::after {
-        content: '';
-        width: 50px;
-        height: 2px;
-        background-color: #aaa;
-        position: absolute;
-        top: 35px;
-        left: 105px;
-        transform: rotate(45deg);
-      }
     }
   }
   
