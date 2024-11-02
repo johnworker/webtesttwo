@@ -245,6 +245,68 @@ body {
   line-height: 1.6;
 }
 
+.process-section {
+  padding: 60px 0;
+  text-align: center;
+}
+.process-section .section-title {
+  font-size: 2rem;
+  color: #e96669;
+  margin-bottom: 40px;
+}
+.process-section .process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+}
+.process-section .process-steps .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  text-align: center;
+}
+.process-section .process-steps .step .circle {
+  width: 60px;
+  height: 60px;
+  background-color: #e96669;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.process-section .process-steps .step .highlight {
+  background-color: #b0b0b0;
+}
+.process-section .process-steps .step .step-content h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+.process-section .process-steps .step .step-content p {
+  font-size: 0.9rem;
+  color: black;
+  line-height: 1.5;
+}
+.process-section .process-steps .step:not(:last-child)::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #aaa;
+  position: absolute;
+  top: 35px;
+  left: 105px;
+  transform: rotate(45deg);
+}
+
 .pricing-section {
   padding: 60px 0;
   text-align: center;
