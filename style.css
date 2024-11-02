@@ -239,32 +239,30 @@ body {
   width: 100%;
 }
 .contact-section .contact-form button:hover {
-  background-color: #003d80;
+  background-color: #e3393d;
 }
 
 footer {
-  background: #888;
+  background: #d02b2f;
   margin-top: 100px;
   padding: 50px;
   text-align: center;
 }
-footer .logo {
+footer p {
   color: #ffffff;
-  font-size: 14px;
-  padding: 10px 0;
-  text-decoration: none;
 }
-footer #link {
-  padding: 1px 0;
+footer .footer-links {
+  list-style-type: none;
 }
-footer #link a {
+footer .footer-links a {
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
   padding: 0 5px;
+  text-decoration: none;
 }
 @media screen and (max-width: 767px) {
-  footer #link a {
+  footer .footer-links a {
     display: block;
     padding: 8px 0;
   }
