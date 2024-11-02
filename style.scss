@@ -165,6 +165,9 @@ body {
 .about-section {
     padding: $padding-section 0;
     background-color: $secondary-color; // 使用較淺的背景色讓內容突出
+    max-width: 900px;
+    margin: 0 auto;
+
 
     .section-title {
         text-align: center;

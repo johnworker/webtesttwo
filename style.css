@@ -124,6 +124,8 @@ body {
 .about-section {
   padding: 60px 0;
   background-color: #f5f5f5;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .about-section .section-title {
   text-align: center;
