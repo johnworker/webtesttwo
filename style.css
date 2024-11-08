@@ -310,35 +310,42 @@ body {
   margin-bottom: 40px;
 }
 .process-section .process-circle {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 800px;
-  margin: auto;
   position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .process-section .process-circle .step {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  text-align: center;
+  width: 120px;
 }
 .process-section .process-circle .step .circle {
   width: 60px;
   height: 60px;
-  background-color: #e96669;
-  color: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
   font-weight: 700;
+  color: #fff;
   margin-bottom: 10px;
 }
-.process-section .process-circle .step.highlight .circle {
-  background-color: #b0b0b0;
+.process-section .process-circle .step .circle.red {
+  background-color: #e74c3c;
+}
+.process-section .process-circle .step .circle.black {
+  background-color: #333;
+}
+.process-section .process-circle .step .circle.gray {
+  background-color: #bdc3c7;
 }
 .process-section .process-circle .step .step-content h3 {
   font-size: 1rem;
@@ -351,33 +358,71 @@ body {
   line-height: 1.5;
 }
 .process-section .process-circle .step-1 {
-  grid-area: 1/2;
+  top: 0%;
+  left: 50%;
+  transform: translate(-40%, 0);
 }
 .process-section .process-circle .step-2 {
-  grid-area: 2/3;
+  top: 30%;
+  right: 5%;
+  transform: translate(0, -50%);
 }
 .process-section .process-circle .step-3 {
-  grid-area: 3/2;
+  bottom: 30%;
+  right: 5%;
+  transform: translate(0, 50%);
 }
 .process-section .process-circle .step-4 {
-  grid-area: 3/1;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .process-section .process-circle .step-5 {
-  grid-area: 2/1;
+  bottom: 30%;
+  left: 5%;
+  transform: translate(0, 50%);
 }
 .process-section .process-circle .step-6 {
-  grid-area: 1/1;
+  top: 30%;
+  left: 5%;
+  transform: translate(0, -50%);
 }
-
-.step:not(:last-child)::after {
+.process-section .process-circle .step::after {
   content: "";
-  position: absolute;
-  width: 30px;
+  width: 60px;
   height: 2px;
-  background-color: #888;
-  top: 30px;
-  right: -45px;
-  transform: rotate(45deg);
+  background-color: #aaa;
+  position: absolute;
+}
+.process-section .process-circle .step-1::after {
+  transform: rotate(60deg);
+  top: 50%;
+  left: 100%;
+}
+.process-section .process-circle .step-2::after {
+  transform: rotate(120deg);
+  top: 100%;
+  left: 50%;
+}
+.process-section .process-circle .step-3::after {
+  transform: rotate(180deg);
+  bottom: 100%;
+  left: 50%;
+}
+.process-section .process-circle .step-4::after {
+  transform: rotate(240deg);
+  bottom: 50%;
+  right: 100%;
+}
+.process-section .process-circle .step-5::after {
+  transform: rotate(300deg);
+  top: 0;
+  right: 50%;
+}
+.process-section .process-circle .step-6::after {
+  transform: rotate(0deg);
+  top: 50%;
+  right: 100%;
 }
 
 .portfolio-section {
