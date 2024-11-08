@@ -324,7 +324,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 120px;
+  width: 200px;
 }
 .process-section .process-circle .step .circle {
   width: 60px;
@@ -383,46 +383,46 @@ body {
   transform: translate(0, 50%);
 }
 .process-section .process-circle .step-6 {
-  top: 30%;
+  top: 35%;
   left: 5%;
   transform: translate(0, -50%);
 }
 .process-section .process-circle .step::after {
   content: "";
-  width: 60px;
+  width: 30px;
   height: 2px;
   background-color: #aaa;
   position: absolute;
 }
 .process-section .process-circle .step-1::after {
-  transform: rotate(60deg);
+  transform: rotate(35deg);
   top: 50%;
-  left: 100%;
+  left: 90%;
 }
 .process-section .process-circle .step-2::after {
-  transform: rotate(120deg);
-  top: 100%;
-  left: 50%;
+  transform: rotate(90deg);
+  top: 120%;
+  left: 42%;
 }
 .process-section .process-circle .step-3::after {
-  transform: rotate(180deg);
-  bottom: 100%;
-  left: 50%;
+  transform: rotate(330deg);
+  bottom: 55%;
+  left: -5%;
 }
 .process-section .process-circle .step-4::after {
-  transform: rotate(240deg);
-  bottom: 50%;
-  right: 100%;
+  transform: rotate(215deg);
+  bottom: 110%;
+  right: 84%;
 }
 .process-section .process-circle .step-5::after {
-  transform: rotate(300deg);
-  top: 0;
-  right: 50%;
+  transform: rotate(270deg);
+  top: -12%;
+  right: 43%;
 }
 .process-section .process-circle .step-6::after {
-  transform: rotate(0deg);
-  top: 50%;
-  right: 100%;
+  transform: rotate(145deg);
+  top: -15%;
+  right: 5%;
 }
 
 .portfolio-section {

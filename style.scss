@@ -394,7 +394,7 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 120px;
+        width: 200px;
   
         .circle {
           width: 60px;
@@ -440,24 +440,24 @@ body {
       .step-3 { bottom: 30%; right: 5%; transform: translate(0, 50%); }
       .step-4 { bottom: 0%; left: 50%; transform: translate(-50%, 0); }
       .step-5 { bottom: 30%; left: 5%; transform: translate(0, 50%); }
-      .step-6 { top: 30%; left: 5%; transform: translate(0, -50%); }
+      .step-6 { top: 35%; left: 5%; transform: translate(0, -50%); }
   
       // 使用 ::after 繪製箭頭
       .step::after {
         content: '';
-        width: 60px;
+        width: 30px;
         height: 2px;
         background-color: #aaa;
         position: absolute;
       }
   
       // 個別箭頭的旋轉和位置
-      .step-1::after { transform: rotate(60deg); top: 50%; left: 100%; }
-      .step-2::after { transform: rotate(120deg); top: 100%; left: 50%; }
-      .step-3::after { transform: rotate(180deg); bottom: 100%; left: 50%; }
-      .step-4::after { transform: rotate(240deg); bottom: 50%; right: 100%; }
-      .step-5::after { transform: rotate(300deg); top: 0; right: 50%; }
-      .step-6::after { transform: rotate(0deg); top: 50%; right: 100%; }
+      .step-1::after { transform: rotate(35deg); top: 50%; left: 90%; }
+      .step-2::after { transform: rotate(90deg); top: 120%; left: 42%; }
+      .step-3::after { transform: rotate(330deg); bottom: 55%; left: -5%; }
+      .step-4::after { transform: rotate(215deg); bottom: 110%; right: 84%; }
+      .step-5::after { transform: rotate(270deg); top: -12%; right: 43%; }
+      .step-6::after { transform: rotate(145deg); top: -15%; right: 5%; }
     }
   }
   
