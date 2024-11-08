@@ -309,23 +309,22 @@ body {
   color: #e96669;
   margin-bottom: 40px;
 }
-.process-section .process-steps {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  max-width: 900px;
+.process-section .process-circle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 800px;
   margin: auto;
   position: relative;
 }
-.process-section .process-steps .step {
+.process-section .process-circle .step {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
-  text-align: center;
+  position: relative;
 }
-.process-section .process-steps .step .circle {
+.process-section .process-circle .step .circle {
   width: 60px;
   height: 60px;
   background-color: #e96669;
@@ -336,20 +335,49 @@ body {
   justify-content: center;
   font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
-.process-section .process-steps .step .highlight {
+.process-section .process-circle .step.highlight .circle {
   background-color: #b0b0b0;
 }
-.process-section .process-steps .step .step-content h3 {
-  font-size: 1.1rem;
+.process-section .process-circle .step .step-content h3 {
+  font-size: 1rem;
   color: #333;
   margin-bottom: 5px;
 }
-.process-section .process-steps .step .step-content p {
+.process-section .process-circle .step .step-content p {
   font-size: 0.9rem;
   color: black;
   line-height: 1.5;
+}
+.process-section .process-circle .step-1 {
+  grid-area: 1/2;
+}
+.process-section .process-circle .step-2 {
+  grid-area: 2/3;
+}
+.process-section .process-circle .step-3 {
+  grid-area: 3/2;
+}
+.process-section .process-circle .step-4 {
+  grid-area: 3/1;
+}
+.process-section .process-circle .step-5 {
+  grid-area: 2/1;
+}
+.process-section .process-circle .step-6 {
+  grid-area: 1/1;
+}
+
+.step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #888;
+  top: 30px;
+  right: -45px;
+  transform: rotate(45deg);
 }
 
 .portfolio-section {
@@ -370,10 +398,6 @@ body {
   max-width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
-}
-.portfolio-section .portfolio-carousel .portfolio-item p {
-  font-size: 1rem;
-  color: #333;
 }
 
 .contact-section {

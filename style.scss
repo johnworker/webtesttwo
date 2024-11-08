@@ -379,12 +379,12 @@ body {
         margin-bottom: 40px;
     }
 
-    .process-steps {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-        max-width: 900px;
+    .process-circle {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 800px;
         margin: auto;
         position: relative;
 
@@ -392,9 +392,9 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 150px;
-            text-align: center;
+            position: relative;
 
+            // 圓形數字樣式
             .circle {
                 width: 60px;
                 height: 60px;
@@ -406,16 +406,17 @@ body {
                 justify-content: center;
                 font-size: 1.2rem;
                 font-weight: 700;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
 
-            .highlight {
-                background-color: #b0b0b0; // 中間灰色的步驟
+            // 特殊的高亮樣式（如步驟3）
+            &.highlight .circle {
+                background-color: #b0b0b0; // 灰色背景，替換為需要的顏色
             }
 
             .step-content {
                 h3 {
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                     color: $text-color;
                     margin-bottom: 5px;
                 }
@@ -427,7 +428,39 @@ body {
                 }
             }
         }
+
+        // 使用grid-area指定步驟的位置，達成環形效果
+        .step-1 {
+            grid-area: 1 / 2;
+        }
+        .step-2 {
+            grid-area: 2 / 3;
+        }
+        .step-3 {
+            grid-area: 3 / 2;
+        }
+        .step-4 {
+            grid-area: 3 / 1;
+        }
+        .step-5 {
+            grid-area: 2 / 1;
+        }
+        .step-6 {
+            grid-area: 1 / 1;
+        }
     }
+}
+
+// 添加箭頭的樣式
+.step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #888;
+    top: 30px;
+    right: -45px;
+    transform: rotate(45deg);
 }
 
 // Portfolio Section區
@@ -451,11 +484,6 @@ body {
                 max-width: 100%;
                 border-radius: 8px;
                 margin-bottom: 10px;
-            }
-
-            p {
-                font-size: 1rem;
-                color: $text-color;
             }
         }
     }
@@ -546,4 +574,3 @@ footer {
     bottom: 30px;
     cursor: pointer;
 }
-
