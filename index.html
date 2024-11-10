@@ -56,35 +56,27 @@
             </div>
             <div class="slide" id="challenge2">
                 <img src="./img/Challenges_two.png" alt="規劃方案">
-                <p>規劃方案</p>
             </div>
             <div class="slide" id="megaphone">
                 <img src="./img/Megaphone.png" alt="提案方法">
-                <p>提案方法</p>
             </div>
             <div class="slide" id="discussion1">
                 <img src="./img/Discussion_one.png" alt="討論執行">
-                <p>討論執行</p>
             </div>
             <div class="slide" id="discussion2">
                 <img src="./img/Discussion_two.png" alt="協作">
-                <p>協作</p>
             </div>
             <div class="slide" id="brainstorming1">
                 <img src="./img/Brainstorming_one.png" alt="創意發想">
-                <p>創意發想</p>
             </div>
             <div class="slide" id="brainstorming2">
                 <img src="./img/Brainstorming_two.png" alt="深化創意">
-                <p>深化創意</p>
             </div>
             <div class="slide" id="teamwork">
                 <img src="./img/Teamwork.png" alt="共贏合作">
-                <p>共贏合作</p>
             </div>
             <div class="slide" id="recording">
                 <img src="./img/Recording.png" alt="記錄成果">
-                <p>記錄成果</p>
             </div>
         </div>
 
@@ -314,5 +306,40 @@
 
     <script src="./main.js"></script>
 </body>
+
+<script>
+    function Goform() {
+        var field1 = $("[name = 'name']").val();
+        var field2 = $("[name = 'phone']").val();
+        var field3 = $("[name = 'e-mail']").val();
+        var field3 = $("[name = 'message']").val();
+
+
+        $.ajax({
+            url: "https://docs.google.com/forms/d/e/1FAIpQLScWJIQ9ruV9M1jgXv1Farj9352ZofVPaIEAi6z6FMBdUlNLDw/viewform",
+            data: {
+                "entry.381726830": field1,
+                "entry.466215020": field2,
+                "entry.775267876": field3,
+                "entry.1412143639": field4,
+            },
+            type: "POST",
+            dataType: "xml",
+            statusCode: {
+                0: function () {
+                    alart("完成");
+                },
+                200: function () {
+                    alart("完成");
+                }
+            }
+        });
+    }   
+</script>
+
+
+<!-- Goform可改名但要對的到html代碼
+
+例：<form action="javascript:Goform();"> 須符合 function Goform() 才會抓取到資料 -->
 
 </html>

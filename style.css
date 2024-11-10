@@ -89,11 +89,6 @@ body {
   width: 100%;
   height: auto;
 }
-.hero-section .animation-container .slide p {
-  margin-top: 10px;
-  font-size: 1.2em;
-  color: #333;
-}
 .hero-section .animation-container .active {
   opacity: 1;
 }
