@@ -475,6 +475,43 @@ body {
   background-color: #e3393d;
 }
 
+.portfolio-section {
+  padding: 20px;
+}
+.portfolio-section .portfolio-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.portfolio-section .portfolio-carousel .portfolio-item {
+  position: relative;
+  width: calc(50% - 10px);
+  cursor: pointer;
+}
+.portfolio-section .portfolio-carousel .portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.portfolio-section .portfolio-carousel .portfolio-item .portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.portfolio-section .portfolio-carousel .portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
 footer {
   background: #d02b2f;
   margin-top: 100px;
