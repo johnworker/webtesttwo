@@ -397,7 +397,7 @@ body {
 .process-section .process-circle .step-2::after {
   transform: rotate(90deg);
   top: 120%;
-  left: 42%;
+  left: 43%;
 }
 .process-section .process-circle .step-3::after {
   transform: rotate(330deg);
