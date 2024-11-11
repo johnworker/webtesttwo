@@ -495,6 +495,7 @@ body {
 }
 .portfolio-section .portfolio-carousel .portfolio-item img {
   width: 100%;
+  max-width: 600px;
   height: auto;
   display: block;
 }
