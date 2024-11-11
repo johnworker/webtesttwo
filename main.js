@@ -81,16 +81,3 @@ $(document).ready(function() {
     });
 });
 
-// 輪播
-$(".portfolio-carousel").slick({
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-        {
-            breakpoint: 1025,
-            settings: { slidesToShow: 1 }
-        }
-    ]
-});

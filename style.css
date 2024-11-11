@@ -426,6 +426,11 @@ body {
   max-width: 900px;
   margin: 0 auto;
 }
+.portfolio-section .portfolio-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .portfolio-section .portfolio-carousel .portfolio-item {
   text-align: center;
   padding: 10px;

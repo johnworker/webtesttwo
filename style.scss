@@ -119,7 +119,6 @@ body {
                 width: 100%;
                 height: auto;
             }
-
         }
 
         .active {
@@ -367,95 +366,142 @@ body {
 .process-section {
     padding: $padding-section 0;
     text-align: center;
-  
+
     .section-title {
-      font-size: 2rem;
-      color: $light-red;
-      margin-bottom: 40px;
+        font-size: 2rem;
+        color: $light-red;
+        margin-bottom: 40px;
     }
-  
+
     .process-circle {
-      position: relative;
-      width: 600px;
-      height: 600px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  
-      .step {
-        position: absolute;
+        position: relative;
+        width: 600px;
+        height: 600px;
+        margin: 0 auto;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        text-align: center;
-        width: 200px;
-  
-        .circle {
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.2rem;
-          font-weight: 700;
-          color: #fff;
-          margin-bottom: 10px;
-  
-          &.red {
-            background-color: #e74c3c; // 紅色
-          }
-          &.black {
-            background-color: #333; // 黑色
-          }
-          &.gray {
-            background-color: #bdc3c7; // 灰色
-          }
+
+        .step {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 200px;
+
+            .circle {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 10px;
+
+                &.red {
+                    background-color: #e74c3c; // 紅色
+                }
+                &.black {
+                    background-color: #333; // 黑色
+                }
+                &.gray {
+                    background-color: #bdc3c7; // 灰色
+                }
+            }
+
+            .step-content {
+                h3 {
+                    font-size: 1rem;
+                    color: $text-color;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    color: darken($text-color, 20%);
+                    line-height: 1.5;
+                }
+            }
         }
-  
-        .step-content {
-          h3 {
-            font-size: 1rem;
-            color: $text-color;
-            margin-bottom: 5px;
-          }
-  
-          p {
-            font-size: 0.9rem;
-            color: darken($text-color, 20%);
-            line-height: 1.5;
-          }
+
+        // 各步驟位置調整
+        .step-1 {
+            top: 0%;
+            left: 50%;
+            transform: translate(-40%, 0);
         }
-      }
-  
-      // 各步驟位置調整
-      .step-1 { top: 0%; left: 50%; transform: translate(-40%, 0); }
-      .step-2 { top: 30%; right: 5%; transform: translate(0, -50%); }
-      .step-3 { bottom: 30%; right: 5%; transform: translate(0, 50%); }
-      .step-4 { bottom: 0%; left: 50%; transform: translate(-50%, 0); }
-      .step-5 { bottom: 30%; left: 5%; transform: translate(0, 50%); }
-      .step-6 { top: 35%; left: 5%; transform: translate(0, -50%); }
-  
-      // 使用 ::after 繪製箭頭
-      .step::after {
-        content: '';
-        width: 30px;
-        height: 2px;
-        background-color: #aaa;
-        position: absolute;
-      }
-  
-      // 個別箭頭的旋轉和位置
-      .step-1::after { transform: rotate(35deg); top: 50%; left: 90%; }
-      .step-2::after { transform: rotate(90deg); top: 120%; left: 43%; }
-      .step-3::after { transform: rotate(330deg); bottom: 55%; left: -5%; }
-      .step-4::after { transform: rotate(215deg); bottom: 110%; right: 84%; }
-      .step-5::after { transform: rotate(270deg); top: -12%; right: 43%; }
-      .step-6::after { transform: rotate(145deg); top: -15%; right: 5%; }
+        .step-2 {
+            top: 30%;
+            right: 5%;
+            transform: translate(0, -50%);
+        }
+        .step-3 {
+            bottom: 30%;
+            right: 5%;
+            transform: translate(0, 50%);
+        }
+        .step-4 {
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        .step-5 {
+            bottom: 30%;
+            left: 5%;
+            transform: translate(0, 50%);
+        }
+        .step-6 {
+            top: 35%;
+            left: 5%;
+            transform: translate(0, -50%);
+        }
+
+        // 使用 ::after 繪製箭頭
+        .step::after {
+            content: "";
+            width: 30px;
+            height: 2px;
+            background-color: #aaa;
+            position: absolute;
+        }
+
+        // 個別箭頭的旋轉和位置
+        .step-1::after {
+            transform: rotate(35deg);
+            top: 50%;
+            left: 90%;
+        }
+        .step-2::after {
+            transform: rotate(90deg);
+            top: 120%;
+            left: 43%;
+        }
+        .step-3::after {
+            transform: rotate(330deg);
+            bottom: 55%;
+            left: -5%;
+        }
+        .step-4::after {
+            transform: rotate(215deg);
+            bottom: 110%;
+            right: 84%;
+        }
+        .step-5::after {
+            transform: rotate(270deg);
+            top: -12%;
+            right: 43%;
+        }
+        .step-6::after {
+            transform: rotate(145deg);
+            top: -15%;
+            right: 5%;
+        }
     }
-  }
-  
+}
 
 // Portfolio Section區
 .portfolio-section {
@@ -465,6 +511,10 @@ body {
     margin: 0 auto;
 
     .portfolio-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         .portfolio-item {
             text-align: center;
             padding: 10px;
@@ -564,7 +614,6 @@ body {
         }
     }
 }
-
 
 // 頁尾區
 footer {
