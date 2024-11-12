@@ -574,45 +574,37 @@ body {
 }
 
 // portfolio頁面
-.portfolio-section {
+.portfolio-page {
+    text-align: center;
+    width: 100%;
+    max-width: 1400px;
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
     padding: 20px;
-    .portfolio-carousel {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+}
 
-        .portfolio-item {
-            position: relative;
-            width: calc(50% - 10px);
-            cursor: pointer;
-
-            img {
-                width: 100%;
-                max-width: 600px;
-                height: auto;
-                display: block;
-            }
-
-            .portfolio-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.6);
-                color: #fff;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                opacity: 0;
-                transition: opacity 0.3s ease;
-            }
-
-            &:hover .portfolio-overlay {
-                opacity: 1;
-            }
-        }
+.portfolio-item {
+    text-align: center;
+    img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        object-fit: cover;
+        object-position: 0;
+    }
+    p {
+        margin-top: 10px;
+        font-size: 1em;
+        color: #666;
     }
 }
 

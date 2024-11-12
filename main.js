@@ -81,3 +81,15 @@ $(document).ready(function() {
     });
 });
 
+// 輪播器
+$(document).ready(function() {
+    $('.portfolio-carousel').slick({
+        infinite: true,        // 無限捲動
+        slidesToShow: 1,       // 一次顯示的數量
+        slidesToScroll: 1,     // 一次滾動數量
+        autoplay: true,        // 開啟自動撥放
+        autoplaySpeed: 3000,   // 自動撥放速度
+        arrows: true,          // 不顯示箭頭
+        dots: false             // 不顯示點點
+    });
+});
