@@ -603,11 +603,98 @@ body {
         }
         p {
             margin-top: 10px;
-            font-size: 1em;
-            color: #666;
+            font-size: 1.5em;
+            color: #000;
+
+            a {
+                text-decoration: none;
+                color: #000;
+
+                &:hover {
+                    color: $dark-red;
+                }
+            }
+
+        }
+
+        .ant {
+            object-position: -140px;
         }
     }
     
+}
+
+// 麵包屑
+.breadcrumb {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1em;
+    color: #666;
+
+    a {
+        color: #d4a15e; // Gold color for links
+        text-decoration: none;
+        margin: 0 5px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    span {
+        color: #888; // Gray color for the last item
+    }
+
+    > a + a::before, > a + span::before {
+        content: ">";
+        margin: 0 5px;
+        color: #ccc; // Color for separator
+    }
+}
+
+// 作品展示
+.portfolio-show {
+    padding: 50px;
+    text-align: center;
+    
+    .portfolio-item {
+        max-width: 1200px;
+        margin: 0 auto;
+        color: #fff;
+        font-family: "Arial", sans-serif;
+        
+        .portfolio-image {
+            position: relative;
+            margin-bottom: 20px;
+            
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+        
+        .portfolio-description {
+            padding: 20px;
+            
+            h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+                color: #000;
+                text-align: left;
+                font-weight: bold;
+            }
+            
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+                color: #000;
+                text-align: left;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 
