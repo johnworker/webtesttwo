@@ -436,12 +436,12 @@ body {
         }
         .step-2 {
             top: 30%;
-            right: 5%;
+            right: 0;
             transform: translate(0, -50%);
         }
         .step-3 {
             bottom: 30%;
-            right: 5%;
+            right: 0;
             transform: translate(0, 50%);
         }
         .step-4 {
@@ -451,12 +451,12 @@ body {
         }
         .step-5 {
             bottom: 30%;
-            left: 5%;
+            left: 0;
             transform: translate(0, 50%);
         }
         .step-6 {
             top: 35%;
-            left: 5%;
+            left: 0;
             transform: translate(0, -50%);
         }
 
@@ -473,7 +473,7 @@ body {
         .step-1::after {
             transform: rotate(35deg);
             top: 50%;
-            left: 90%;
+            left: 100%;
         }
         .step-2::after {
             transform: rotate(90deg);
@@ -486,9 +486,9 @@ body {
             left: -5%;
         }
         .step-4::after {
-            transform: rotate(215deg);
+            transform: rotate(210deg);
             bottom: 110%;
-            right: 84%;
+            right: 90%;
         }
         .step-5::after {
             transform: rotate(270deg);
@@ -498,7 +498,7 @@ body {
         .step-6::after {
             transform: rotate(145deg);
             top: -15%;
-            right: 5%;
+            right: -5%;
         }
     }
 }
