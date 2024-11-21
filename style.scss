@@ -15,6 +15,7 @@ $filter: blur(5px);
 // 間距設定
 $padding-section: 60px;
 // 尺寸設定
+$desk_normal: 1350px; //桌機螢幕切換尺寸
 $tablet: 1024px; //平板尺寸 (ipad pro)
 $tablets: 960px; //平板尺寸 (ipad)
 $mobile: 767px; //手機尺寸
@@ -22,7 +23,7 @@ $mobile: 767px; //手機尺寸
 * {
     margin: 0;
     padding: 0;
-    font-family: 微軟正黑體;
+    font-family: "微軟正黑體";
     // 盒子大小：框線盒子 (規範網頁盒子範圍)
     box-sizing: border-box;
 }
@@ -67,6 +68,7 @@ body {
 
             li {
                 margin: 5px 0;
+                text-align: center;
 
                 a {
                     text-decoration: none;
@@ -94,7 +96,7 @@ body {
     color: $background-color;
     text-align: center;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0 150px auto auto;
 
     // 動畫區域
     .animation-container {
@@ -148,7 +150,7 @@ body {
     padding: $padding-section 0;
     background-color: $secondary-color; // 使用較淺的背景色讓內容突出
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 150px auto auto;
 
     .section-title {
         text-align: center;
@@ -235,6 +237,7 @@ body {
 .about-us-section {
     padding: 60px 0;
     background-color: #f9f9f9;
+    margin: 0 150px auto;
 
     .section-title {
         text-align: center;
@@ -312,7 +315,7 @@ body {
     text-align: center;
     background-color: $secondary-color;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 150px auto;
 
     .section-title {
         font-size: 2rem;
@@ -366,6 +369,7 @@ body {
 .process-section {
     padding: $padding-section 0;
     text-align: center;
+    margin: 0 150px auto;
 
     .section-title {
         font-size: 2rem;
