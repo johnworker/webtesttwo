@@ -150,7 +150,7 @@ body {
     padding: $padding-section 0;
     background-color: $secondary-color; // 使用較淺的背景色讓內容突出
     max-width: 900px;
-    margin: 0 150px auto;
+    margin: 0 auto;
 
     .section-title {
         text-align: center;
@@ -237,7 +237,7 @@ body {
 .about-us-section {
     padding: 60px 0;
     background-color: #f9f9f9;
-    margin: 0 150px auto;
+    margin: 0 auto;
 
     .section-title {
         text-align: center;
@@ -315,7 +315,7 @@ body {
     text-align: center;
     background-color: $secondary-color;
     max-width: 900px;
-    margin: 0 150px auto;
+    margin: 0 auto;
 
     .section-title {
         font-size: 2rem;
@@ -369,7 +369,7 @@ body {
 .process-section {
     padding: $padding-section 0;
     text-align: center;
-    margin: 0 150px auto;
+    margin: 0 auto;
 
     .section-title {
         font-size: 2rem;
@@ -508,11 +508,11 @@ body {
 }
 
 // Portfolio Section區
-.portfolio-section {
+.portfolio-section{
     padding: $padding-section 0;
     background-color: $secondary-color;
     max-width: 900px;
-    margin: 0 150px auto;
+    margin: 0 auto;
 
     .portfolio-carousel {
         display: flex;
@@ -541,7 +541,7 @@ body {
 .contact-section {
     padding: $padding-section 0;
     text-align: center;
-    margin: 0 150px auto;
+    margin: 0 auto;
 
     .contact-form {
         display: flex;

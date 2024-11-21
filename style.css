@@ -111,7 +111,7 @@ body {
   padding: 60px 0;
   background-color: #f5f5f5;
   max-width: 900px;
-  margin: 0 150px auto;
+  margin: 0 auto;
 }
 .about-section .section-title {
   text-align: center;
@@ -185,7 +185,7 @@ body {
 .about-us-section {
   padding: 60px 0;
   background-color: #f9f9f9;
-  margin: 0 150px auto;
+  margin: 0 auto;
 }
 .about-us-section .section-title {
   text-align: center;
@@ -253,7 +253,7 @@ body {
   text-align: center;
   background-color: #f5f5f5;
   max-width: 900px;
-  margin: 0 150px auto;
+  margin: 0 auto;
 }
 .services-section .section-title {
   font-size: 2rem;
@@ -300,7 +300,7 @@ body {
 .process-section {
   padding: 60px 0;
   text-align: center;
-  margin: 0 150px auto;
+  margin: 0 auto;
 }
 .process-section .section-title {
   font-size: 2rem;
@@ -427,7 +427,7 @@ body {
   padding: 60px 0;
   background-color: #f5f5f5;
   max-width: 900px;
-  margin: 0 150px auto;
+  margin: 0 auto;
 }
 .portfolio-section .portfolio-carousel {
   display: flex;
@@ -451,7 +451,7 @@ body {
 .contact-section {
   padding: 60px 0;
   text-align: center;
-  margin: 0 150px auto;
+  margin: 0 auto;
 }
 .contact-section .contact-form {
   display: flex;
