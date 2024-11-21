@@ -427,7 +427,7 @@ body {
   padding: 60px 0;
   background-color: #f5f5f5;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 150px auto;
 }
 .portfolio-section .portfolio-carousel {
   display: flex;
@@ -451,6 +451,7 @@ body {
 .contact-section {
   padding: 60px 0;
   text-align: center;
+  margin: 0 150px auto;
 }
 .contact-section .contact-form {
   display: flex;
