@@ -503,6 +503,10 @@ body {
 .portfolio-grid .portfolio-item {
   text-align: center;
 }
+.portfolio-grid .portfolio-item a {
+  text-decoration: none;
+  color: #000;
+}
 .portfolio-grid .portfolio-item img {
   width: 300px;
   height: 300px;
@@ -517,11 +521,7 @@ body {
   font-size: 1.5em;
   color: #000;
 }
-.portfolio-grid .portfolio-item p a {
-  text-decoration: none;
-  color: #000;
-}
-.portfolio-grid .portfolio-item p a:hover {
+.portfolio-grid .portfolio-item p:hover {
   color: #d02b2f;
 }
 .portfolio-grid .portfolio-item .ant {

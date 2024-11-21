@@ -598,6 +598,13 @@ body {
 
     .portfolio-item {
         text-align: center;
+
+        a {
+            text-decoration: none;
+            color: #000;
+
+        }
+
         
         img {
             width: 300px;
@@ -611,13 +618,8 @@ body {
             font-size: 1.5em;
             color: #000;
 
-            a {
-                text-decoration: none;
-                color: #000;
-
-                &:hover {
-                    color: $dark-red;
-                }
+            &:hover {
+                color: $dark-red;
             }
 
         }
